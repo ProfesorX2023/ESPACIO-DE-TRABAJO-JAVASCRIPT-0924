@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos en Javascript</title>
+</head>
+<body>
+    <script>
+
+
+        //OPERADOR AND
+        let edad = 14;
+        let tieneLicencia = true;
+        if(edad >= 18 && tieneLicencia){
+            console.log("Puedes conducir");
+        } else{
+            console.log("no Puedes conducir")
+        }
+
+        //OPERADOR OR
+        let esEstudiante = false;
+        let tieneDescuento = false;
+        if(esEstudiante || tieneDescuento){
+            console.log("Tienes precio especial");
+        }else{
+            console.log("No tiene precio especial")
+        }
+
+        //OPERADOR NOT
+        let estaLloviendo = true;
+        if(!estaLloviendo){
+            console.log("Puedes salir")
+        }else{
+            console.log("No puedes salir")
+        }
+
+
+    </script>
+</body>
+</html>

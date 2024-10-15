@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Catálogo de Películas</h1>
+    <input type="number" id="pelicula" min="0"  placeholder="Ingrese su edad">
+    <select id="genero">
+        <option value="comedia">Comedia</option>
+        <option value="crimen">Crimen</option>
+        <option value="drama">Drama</option>
+        <option value="musical">Musical</option>
+    </select>
+    <button onclick="agregarPelicula()">Agregar Pelicula</button>
+
+    <h2>Peliculas en tu catálogo: </h2>
+    <ul id="catalogo"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
