@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detalles de la Pelicula</h1>
+    <ul id="detallePelicula"></ul>
+
+    <script>
+        const pelicula = {
+            titulo: "Inception",
+            director: "Christopher Nolan",
+            anio: 2010,
+            genero: "Ciencia Ficción"
+        }
+
+        document.getElementById("detallePelicula").innerHTML = `
+        <li><strong>Titulo:</strong> ${pelicula.titulo}</li>
+        <li><strong>Director</strong> ${pelicula.director}</li>
+        <li><strong>Año</strong> ${pelicula.anio}</li>
+        <li><strong>Género:</strong> ${pelicula.genero}</li>
+        `
+    </script>
+</body>
+</html>
