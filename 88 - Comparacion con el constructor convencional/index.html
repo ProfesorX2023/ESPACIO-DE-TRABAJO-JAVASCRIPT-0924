@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo Comparacion</title>
+</head>
+<body>
+    <script>
+        //Definimos un constructor de función
+        function Persona(nombre, edad){
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+
+        //Instanciando con el constructor
+        let persona2 = new Persona("Juan",30)
+
+        //Creacion de un prototipo
+        let empleado ={
+            nombre : "Carlos",
+            edad : 25
+        }
+
+
+        //Instanciando con proptotipo y herencia
+        let empleado2 = Object.create(empleado);
+
+        //Añadir un método al prototipo persona
+        Persona.prototype.saludar = function(){
+            alert(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años`);
+        }
+
+
+
+
+    </script>
+</body>
+</html>

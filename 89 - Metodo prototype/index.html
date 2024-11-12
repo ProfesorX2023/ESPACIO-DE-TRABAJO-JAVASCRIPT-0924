@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método prototype</title>
+</head>
+<body>
+    <script>
+        function Auto(marca, modelo){
+            this.marca = marca;
+            this.modelo = modelo;
+        }
+
+        // Definir un método en el prototipo
+        Auto.prototype.mostrarInfo = function(){
+            return `Marca: ${this.marca}, modelo: ${this.modelo}`;
+        }
+
+        Auto.prototype.color = "azul";
+
+        let auto1 = new Auto("Toyota","Corolla");
+        console.log(auto1.mostrarInfo());
+    </script>
+</body>
+</html>

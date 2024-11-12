@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(174, 225, 225, 0.738);
@@ -39,4 +40,47 @@ button:hover{
     font-weight: bolder;
     font-size: large;
     color: blue;
+=======
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(174, 225, 225, 0.738);
+}
+
+h2{
+    color: brown;
+}
+
+h3{
+    color: darkslateblue;
+}
+
+li{
+    font-weight: bolder;
+    color: blue;
+}
+
+button{
+    height: 30px;
+    width: 150px;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    height: 180px;
+}
+
+.info span{
+    font-weight: bolder;
+    font-size: large;
+    color: blue;
+>>>>>>> 2deb5bfda9429f8209f9e2d0304100fadc140662
 }

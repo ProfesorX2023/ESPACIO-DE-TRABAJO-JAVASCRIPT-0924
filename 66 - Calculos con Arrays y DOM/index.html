@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,4 +24,31 @@
         document.getElementById("promedio").textContent = suma/notas.length;
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Notas</h2>
+    <ul id="listaNotas"></ul>
+    <p id="promedio"></p>
+    <script>
+        let notas = [60,75,83];
+        let elementoListaNotas = document.getElementById("listaNotas");
+        let suma = 0;
+        for(let nota of notas){
+            let elementoLista = document.createElement("li");
+            elementoLista.innerText = nota;
+            elementoListaNotas.appendChild(elementoLista);
+            suma += nota;
+            
+        }
+        document.getElementById("promedio").textContent = suma/notas.length;
+    </script>
+</body>
+>>>>>>> 2deb5bfda9429f8209f9e2d0304100fadc140662
 </html>

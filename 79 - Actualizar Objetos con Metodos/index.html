@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,4 +41,48 @@
         
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Información del Producto</h1>
+    <div id="infoProducto"></div>
+    <button onclick="actualizarStockProducto()">Actualizar Stock</button>
+
+    <script>
+        const producto = {
+            nombre: "Laptop",
+            precio: 1200,
+            stock: 10,
+            actualizarStock(cantidad){
+                this.stock += cantidad;
+            }
+
+        }
+
+        function mostrarProducto(){
+            document.getElementById("infoProducto").innerHTML = `
+            <p><strong>Nombre: </strong> ${producto.nombre}</p>
+            <p><strong>Precio: </strong> ${producto.precio}</p>
+            <p><strong>Stock: </strong> ${producto.stock}</p>
+            `
+        }
+
+        function actualizarStockProducto(){
+                const cantidad = parseInt(prompt("Ingrese la cantidad a agregar al stock"));
+                producto.actualizarStock(cantidad);
+                mostrarProducto();
+                
+        }
+
+        mostrarProducto();
+        
+    </script>
+</body>
+>>>>>>> 2deb5bfda9429f8209f9e2d0304100fadc140662
 </html>

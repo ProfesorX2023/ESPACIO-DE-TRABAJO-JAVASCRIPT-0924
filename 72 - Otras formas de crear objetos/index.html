@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,4 +28,35 @@
         persona1.saludar();
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //plantilla
+        //Clases siempre llevan letra Capital
+        class Persona{
+            constructor(nombre, edad){
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+            saludar(){
+                console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años`);
+            }
+        }
+
+        //instansiación
+        const persona1 = new Persona("Juan",23);
+        const persona2 = new Persona("Pablo",33);
+        const persona3 = new Persona("Cristobalina",50);
+
+        persona1.saludar();
+    </script>
+</body>
+>>>>>>> 2deb5bfda9429f8209f9e2d0304100fadc140662
 </html>
