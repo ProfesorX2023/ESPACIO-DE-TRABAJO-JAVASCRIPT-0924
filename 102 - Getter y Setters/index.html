@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getters y Setters</title>
+</head>
+<body>
+    <script>
+        class Persona { 
+            constructor(nombre, edad){
+                this.nombre = nombre;
+                this._edad = edad;
+            }
+
+            //Getter para la edad
+            get edad(){
+                return this._edad;
+            }
+
+            //Setter para la edad
+            set edad(valor){
+                if (valor > 0){
+                    this._edad = valor;
+                }else {
+                    console.log("La edad edad debe de ser un número positivo")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

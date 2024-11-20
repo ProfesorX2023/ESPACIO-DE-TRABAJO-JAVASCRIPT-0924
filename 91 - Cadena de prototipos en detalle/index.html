@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadena de prototipos en detalle</title>
+</head>
+<body>
+    <script>
+        function Persona(nombre){
+            this.nombre = nombre;
+        }
+
+        Persona.prototype.saludar = function(){
+            return `Hola, mi nombre es ${this.nombre}`;
+        }
+
+        let juan = new Persona("Juan");
+        console.log(juan.saludar()); // Hola, mi nombre es Juan
+
+        console.log(Object.getPrototypeOf(juan) === Persona.prototype);
+        console.log(Object.getPrototypeOf(Persona.prototype) === Object.prototype);
+    </script>
+</body>
+</html>
