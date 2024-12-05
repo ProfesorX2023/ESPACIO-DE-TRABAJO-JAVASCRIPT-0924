@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mascotas</title>
+</head>
+<body>
+    <h1>Registro de Mascotas en la veterinaria Arca de Noe</h1>
+    <div class="mascotas">
+        <label for="nombre">Nombre de la mascota</label>
+        <input type="text" id="nombre"><br><br>
+        <label for="tipo">Tipo de la mascota</label>
+        <input type="text" id="tipo"><br><br>
+        <label for="edad">Edad de la mascota</label>
+        <input type="text" id="edad"><br><br>
+        <button onclick="registrarMascota()">Registrar Mascota</button>
+    </div>
+
+    <h2>Lista de Mascotas Registradas</h2>
+    <ul id="listaMascotas"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
